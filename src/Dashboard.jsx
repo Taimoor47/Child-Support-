@@ -101,7 +101,7 @@ const Dashboard = () => {
       } else {
         balance = web3.utils.fromWei(result, 'ether');
         setDonationBalance(result / 10**10)
-        console.log('Contract balance:', result, 'ETH');
+     
       }
     });
     
@@ -139,7 +139,7 @@ const Dashboard = () => {
       setVolume(data.volume)
   
       console.log(`Child Support price: ${chsPrice} USD`);
-      console.log(data);
+
     } catch (error) {
       console.error(error);
     }
